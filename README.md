@@ -1,2 +1,2 @@
-# angular-
+# angular lab2
 lab2
