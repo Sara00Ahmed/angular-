@@ -1,0 +1,90 @@
+
+
+/* Center the search bar */
+.search {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #3f51b5;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 1600px;
+}
+input {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Style the Angular Material form field */
+mat-form-field.example-full-width {
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field styles */
+input[matInput] {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  max-width: 1500px;
+}
+
+/* Hover and Focus effects */
+mat-form-field.example-full-width:hover,
+mat-form-field.example-full-width:focus-within {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  mat-form-field.example-full-width {
+    max-width: 100%;
+  }
+}
+
+/* Style the search button */
+button[mat-flat-button] {
+  background-color: #3f51b5; /* Angular Material Indigo */
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover and Focus Effects */
+button[mat-flat-button]:hover {
+  background-color: #303f9f; /* Darker Indigo */
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Active Click Effect */
+button[mat-flat-button]:active {
+  transform: scale(0.98);
+}
+
+/* Disabled Button */
+button[mat-flat-button]:disabled {
+  background-color: #bdbdbd;
+  color: #ffffffa0;
+  cursor: not-allowed;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  button[mat-flat-button] {
+    width: 100%;
+    padding: 12px;
+  }
+}

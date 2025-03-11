@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<div class="container">
+  <app-header></app-header>
+  <h1>Users</h1>
+<!-- // search bar from anguglar material -->
+<form class="search">
+  <mat-form-field class="example-full-width">
+    <mat-label>Search</mat-label>
+    <input
+    type="text"
+    matInput
+    placeholder="Search for email..."
+    />
+  </mat-form-field>
+  <button mat-flat-button>Search</button>
+</form>
+
+
+
+  <!-- User Cards -->
+<!-- finaaly , use search pipe -->
+@for (user of users; track user.id) {
+    <mat-card appearance="outlined" class="user-card">
+      <mat-card-header>
+        <div class="profile-picture">
+          <img [src]="user.image" [alt]="user.username">
+        </div>
+        <mat-card-title>{{ user.username }}</mat-card-title>
+        <mat-card-subtitle [ngStyle]= "getRoleStyle(user.role)" >{{ user.role }}</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Phone:</strong> {{ user.phone }}</p>
+        <p><strong>Birthdate:</strong> {{ user.birthDate }}</p>
+      </mat-card-content>
+    </mat-card>
+  }
+</div>
